@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="GPS_Plugin.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GPS_Plugin"
+             Title="GPS"
+             Padding="20,20,20,20">
+    <StackLayout HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 VerticalOptions="Center">
+        <Label HorizontalOptions="Center" Text="Time" />
+        <Entry x:Name="TimeEntry"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"
+               Placeholder="0" />
+        <Label HorizontalOptions="Center" Text="Lat" />
+        <Entry x:Name="LatEntry"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"
+               Placeholder="0" />
+        <Label HorizontalOptions="Center" Text="Long" />
+        <Entry x:Name="LongEntry"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"
+               Placeholder="0" />
+        <Label HorizontalOptions="Center" Text="Speed" />
+        <Entry x:Name="SpeedEntry"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"
+               Placeholder="0" />
+        <Button x:Name="Go"
+                Clicked="Go_OnClicked"
+                Text="GO" />
+        <Button x:Name="Stop"
+                Clicked="Stop_OnClicked"
+                Text="STOP" />
+    </StackLayout>
+</ContentPage>
